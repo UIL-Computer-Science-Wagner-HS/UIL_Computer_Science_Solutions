@@ -1,3 +1,6 @@
+/**
+*This class simply prints out a weird face.
+*/
 public class Face {
 
 	public static void main(String[] args) {
