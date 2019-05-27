@@ -1,6 +1,10 @@
 import java.util.*;
 import java.io.*;
 
+/**
+*Given a month, day, and year, print the date in 3 different forms.
+*3 different forms are specified in problem. Sorry, I don't have it right now.
+*/
 public class Nandita {
 	
 	public static void process(String month,String day, String year) {
