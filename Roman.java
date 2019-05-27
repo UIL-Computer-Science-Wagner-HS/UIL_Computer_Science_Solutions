@@ -2,6 +2,9 @@ import java.util.*;
 
 import java.io.*;
 
+/**
+*Convert a roman numeral to a decimal number (base 10) for the inputted data sets.
+*/
 public class Roman {
 
 	public static void main(String[] args)throws IOException {
