@@ -3,7 +3,10 @@ import java.util.*;
 import java.io.*;
 
  
-
+/**
+*Class to find max frequency of names from an input file.
+*This solution uses a Map data structure to handle both a name and a frequency.
+*/
 public class CommonNames {
 
  
