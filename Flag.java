@@ -1,6 +1,10 @@
 import java.io.*;
 import java.util.*;
 
+/**
+*Make a flag according to a specific pattern.
+*(Pattern in UIL Problem. Sorry, I couldn't find it)
+*/
 public class Flag {
 	
 	public static void process(int width, int height) {
