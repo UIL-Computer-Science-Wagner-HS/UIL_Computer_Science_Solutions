@@ -1,0 +1,31 @@
+import static java.lang.System.*;
+import java.io.*;
+import java.util.*;
+public class Textwork {
+
+	public static void main(String[] args)  throws IOException {
+		Scanner scan = new Scanner(new File("test.dat"));
+		int wordCounter = 0, vowels=0, punc = 0, cons=0;
+		while(scan.hasNext()){
+			String word = scan.next();
+			word = word.toLowerCase();
+			wordCounter++;
+			for(int i = 0; i<word.length(); i++) {
+				if(word.substring(i,i+1).matches("[aeiou]"))
+					vowels++;
+				else if (word.substring(i,i+1).matches("\\w"))
+					cons++;
+				else
+					punc++;
+				
+			}
+			
+			//System.out.println("words:"  +wordCounter);
+		}
+		System.out.println("words:"  +wordCounter);
+		System.out.println("vowles:"  +vowels);
+		System.out.println("cons:"  +cons);
+		System.out.println("punc:"  +punc);
+	}
+
+}
