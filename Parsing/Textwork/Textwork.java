@@ -34,7 +34,7 @@ public class Textwork {
 		Scanner scan = new Scanner(new File("textwork.dat"));
 		
 		while(scan.hasNext()) {
-			processWord(scan.next());
+			processWord(scan.next().toLowerCase());
 			noWords++;
 		}
 		
