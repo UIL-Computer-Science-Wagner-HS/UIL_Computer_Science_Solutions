@@ -30,7 +30,7 @@ public class Caleb {
 		if(hours>12)
 			hours-=12;
 		
-		//For ever 6 degrees, a minute passes
+		//For every 6 degrees, a minute passes
 		while(bogMinutes>0) {
 			bogMinutes-=6;
 			if(bogMinutes>=0)
