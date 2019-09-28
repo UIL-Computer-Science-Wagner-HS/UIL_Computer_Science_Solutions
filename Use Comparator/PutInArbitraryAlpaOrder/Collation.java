@@ -46,3 +46,15 @@ public class Collation{
 	}
 
 }
+/*DATA--
+3
+ojhdfnexkizuyvgltraqpwbsmc
+5
+dance safe sidewalk orange safety
+zyxwvutsrqponmlkjihgfedcba
+7
+cage hammer tree cow yearning treatment morning
+fhgdsakjlpioytuerqwczxbnvm
+3
+apple justice favorite
+*/
