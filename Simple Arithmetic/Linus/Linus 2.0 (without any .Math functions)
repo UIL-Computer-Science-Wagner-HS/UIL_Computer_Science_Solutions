@@ -1,0 +1,59 @@
+
+package compsci;
+import java.io.*;
+import java.util.*;
+public class linus {
+public static void main(String[] args) throws IOException{
+Scanner scan = new Scanner(new File("linus"));
+scan.nextInt();
+while(scan.hasNextInt()) {
+int a = scan.nextInt();
+int b = scan.nextInt();
+ArrayList<Integer> arr1 = new ArrayList<>();
+ArrayList<Integer> arr2 = new ArrayList<>();
+if(a == b) {
+System.out.println("1");
+}
+if((a*1.0)/(b*1.0) < 1 && a != b) {
+for(int i = 1; i <= a; i++) {
+if(a%i == 0) {
+arr1.add(i);
+}
+}
+for(int i = 1; i <= b; i++) {
+if(b%i == 0) {
+arr2.add(i);
+}
+}
+int max = 0;
+for(int i = 0; i < arr1.size(); i++) {
+if(arr2.contains(arr1.get(i)) && arr1.get(i) > max) {
+max = arr1.get(i);
+}
+}
+System.out.println(a/max + "/" + b/max);
+}
+else  if(a != b){
+int outside = (a/b);
+int leftover = a - outside*b;
+for(int i = 1; i <= leftover; i++) {
+if(leftover%i == 0) {
+arr1.add(i);
+}
+}
+for(int i = 1; i <= b; i++) {
+if(b%i == 0) {
+arr2.add(i);
+}
+}
+int max = 0;
+for(int i = 0; i < arr1.size(); i++) {
+if(arr2.contains(arr1.get(i)) && arr1.get(i) > max) {
+max = arr1.get(i);
+}
+}
+System.out.println(outside + " " + leftover/max + "/" + b/max);
+}
+}
+}
+}
