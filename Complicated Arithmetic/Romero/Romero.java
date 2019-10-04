@@ -15,8 +15,9 @@ public class Romero {
 	}
 
 	/**
-	 * Use Cramer's Rule to determine the number of adults and students that
-	 * attended the game. Then, print the results accordingly.
+	 * Use Cramer's Rule to solve the system of equations and determine the number
+	 * of adults and students that attended the game. Then, print the results
+	 * accordingly.
 	 * 
 	 * @param dateArray
 	 * @param noTickets
