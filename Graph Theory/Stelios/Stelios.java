@@ -35,7 +35,7 @@ public class Stelios {
 	}
 	
 	/**
-	 * Add unidirectional edge from a to b.
+	 * Add bidirectional edge from a to b.
 	 * @param a
 	 * @param b
 	 */
