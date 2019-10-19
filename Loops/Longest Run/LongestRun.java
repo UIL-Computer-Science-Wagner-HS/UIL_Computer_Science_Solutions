@@ -37,7 +37,6 @@ public class LongestRun {
 
 		//Run through  ints array looking for longest sequence that matches parameters.
 		for (int i = 0; i < ints.length; i++) {
-//System.out.println(i);
 			int start = i, sum = 1;
 			while (Math.abs(ints[start] - target) <= tolerance) {
 				sum++;
