@@ -10,19 +10,21 @@ public class pr53 {
 		ArrayList<String> list = new ArrayList<>();
 		for(String a: input)
 			list.add(a);
-		TreeSet<String> set = new TreeSet<String>();
+		ArrayList<String> fourLetterWords = new ArrayList<String>();
 		
 		for(int i = list.size()-1; i>=0;i--) {
 			if(list.get(i).length()==4) {
-				set.add(list.get(i));
+				fourLetterWords.add(list.get(i));
 				list.remove(i);
 			}
 		}
 		
-		list.stream().forEach(x->System.out.print(x+" "));
+		Collections.sort(fourLetterWords);
+		
+		list.forEach(x->System.out.print(x+" "));
 		System.out.println();
 		
-		set.stream().forEach(x->System.out.println(x));
+		fourLetterWords.forEach(x->System.out.println(x));
 	}
 
 	public static void main(String[] args)throws IOException {
