@@ -1,0 +1,18 @@
+Problem: Given a list of numbers and a target sum, determine whether the numbers can be selected in such a way that they add to the target.
+Input: The first number in the data file represents the number of test cases. Each test case consists of a target sum on one line followed by a space separated list of integers.
+Data file: pr154.dat
+Output: If the target sum can be reached print YES otherwise print NO
+Assumptions: None
+
+Sample Input:
+3
+12
+1 5 10
+16
+1 1 1 6 7 10 25
+51
+25 21 11 14 12 16 18 4 50
+Output Input: 	
+NO
+YES
+YES 
