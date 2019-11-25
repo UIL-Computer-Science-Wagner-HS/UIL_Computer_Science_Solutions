@@ -1,0 +1,34 @@
+Problem: Given a string generate all of the possible combinations of the letters without changing the original order. For example CAT would have a valid combination of {A, AT, C, CA, CT, CAT}
+Input: The first number in the data file represents the number data sets to follow. Each data set will consist of a word in all caps.
+Data file: pr151.dat
+Output: Output the possible strings in alphabetical order.
+Assumptions: 
+
+Sample Input:
+2
+ABC
+ABCD
+Output Input: 	
+A
+AB
+ABC
+AC
+B
+BC
+C
+
+A
+AB
+ABC
+ABCD
+ABD
+AC
+ACD
+AD
+B
+BC
+BCD
+BD
+C
+CD
+D
