@@ -4,6 +4,9 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Scanner;
 
+/**
+* @author Ian Fernandes
+*/
 public class Patterns {
 
 	/**
