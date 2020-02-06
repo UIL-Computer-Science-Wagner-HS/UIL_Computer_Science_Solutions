@@ -43,7 +43,7 @@ public class Travel {
 
 	private static void dijkstra() {
 		while (inTree.size() < adjMat.length) {
-			int currentVertex = getNextMinVertex(); // make sure this doesn't evaluate to -1
+			int currentVertex = getNextMinVertex();
 			inTree.add(currentVertex);
 			for (int i = 0; i < adjMat[currentVertex].length; i++) {
 				if (adjMat[currentVertex][i] != 0 && shortestDistanceFromSource[currentVertex]
