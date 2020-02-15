@@ -1,0 +1,29 @@
+2019 A+ Computer Science – PACKET 4 - www.apluscompsci.com
+
+© 2019 A+ Computer Science – PACKET 4 - www.apluscompsci.com
+
+1. Word Score
+
+Program Name: word_score.java Input File: word_score.dat
+
+You have designed a word game and need to build a scoring algorithm. Words in your game can be of any length.
+The score of a word is half of its length plus 1 point for every vowel, 2 points for each z and 3 points for each x or q.
+Write a program that will take in words and print the winner word with its score. There will be no ties.
+Input
+There will be an unknown number of inputs each on their own line. Each input will contain an
+unknown number, each separated by a space.
+Output
+For each input display the winning word and its score on its own line, in the following format:
+word - Score
+Example Input File
+stIck
+thy
+bat boots yahoo piZza
+Ate zaP bringing
+ttt acEeedzzxq
+Example Output to Screen
+stIck - 3
+thy - 1
+piZza - 8
+bringing - 6
+acEeedzzxq - 19  
