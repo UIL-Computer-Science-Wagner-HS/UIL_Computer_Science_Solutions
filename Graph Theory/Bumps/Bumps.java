@@ -9,6 +9,11 @@ import java.util.Scanner;
 import java.util.Set;
 import java.util.TreeSet;
 
+/**
+* A+ Computer Science: 2019-2020 Packet 6, Problem 9 (Bumps)
+*
+* @author Ian Fernandes
+*/
 public class Bumps {
 
 	static HashMap<Character, Integer> charToInt = new HashMap<>();
