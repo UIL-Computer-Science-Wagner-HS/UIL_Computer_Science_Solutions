@@ -12,7 +12,7 @@ import java.util.TreeSet;
 /**
 * A+ Computer Science: 2019-2020 Packet 6, Problem 9 (Bumps)
 *
-* @author Ian Fernandes
+* @author Ian Fernandes.
 */
 public class Bumps {
 
