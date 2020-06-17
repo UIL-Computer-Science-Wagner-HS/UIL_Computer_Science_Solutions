@@ -8,4 +8,11 @@ We hope you like all the solutions, and please feel free to suggest any changes!
 ## Team Pics:
 
 <img src="./Team Pics/csUilTeamPic1.jpg">
-![Team Pic 1](/Team Pics/csUilTeamPic1.jpg)
+
+<img src="./Team Pics/csUilTeamPic2.jpg">
+
+<img src="./Team Pics/csUilTeamPic3.jpg">
+
+<img src="./Team Pics/csUilTeamPic4.jpg">
+
+<img src="./Team Pics/csUilPlaquePic1.jpg">
