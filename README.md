@@ -7,4 +7,4 @@ We hope you like all the solutions, and please feel free to suggest any changes!
 
 ## Team Pics:
 
-![Team Pic 1](Team\ Pics/csUilTeamPic1.jpg)
+![Team Pic 1](/Team Pics/csUilTeamPic1.jpg)
