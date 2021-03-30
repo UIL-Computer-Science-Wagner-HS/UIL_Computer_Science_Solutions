@@ -7,6 +7,8 @@ We hope you like all the solutions, and please feel free to suggest any changes!
 
 ## Team Pics:
 
+<img src="./Team Pics/districtChamps2021.jpg">
+
 <img src="./Team Pics/csUilTeamPic1.jpg">
 
 <img src="./Team Pics/csUilTeamPic2.jpg">
