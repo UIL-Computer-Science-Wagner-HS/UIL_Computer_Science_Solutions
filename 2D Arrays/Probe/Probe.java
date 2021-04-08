@@ -58,7 +58,6 @@ public class Probe {
 					for(Pair<Integer, Integer> pair: otherPossiblePairs) {
 						arr = copy(nextCopy);
 						int secondNumCrystals = getNumCrystals(pair.getKey(), pair.getValue());
-						//System.out.printf("Number of crystals for 2: (%d, %d): %d%n", r, c, firstNumCrystals);
 						int currNumCrystals = firstNumCrystals + secondNumCrystals;
 						if(currNumCrystals>maxNumCrystals)
 							maxNumCrystals = currNumCrystals;
