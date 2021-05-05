@@ -4,9 +4,6 @@ import java.util.*;
 public class Deshi {
 
 	
-	static boolean check(String str) {
-		return(!(str.matches(".*[aeiou]{5}.*")||str.matches(".*[^aeiou]{5}.*")));	
-	}
 	public static void main(String[] args) throws IOException{
 		Scanner scan = new Scanner(new File("deshi.dat"));
 		while(scan.hasNextLine()) {
