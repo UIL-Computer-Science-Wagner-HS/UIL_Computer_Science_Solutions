@@ -11,6 +11,7 @@ import java.util.*;
 
 public class Maze17jul1 {
 	static int[][] moves = { { 1, 0 }, { -1, 0 }, { 0, -1 }, { 0, 1 } };
+	// this stores an optimal path
 	static List<PointM> list = new ArrayList();
 
 	public static void main(String[] args) throws FileNotFoundException {
