@@ -1,5 +1,6 @@
 import java.io.*;
 import java.util.*;
+//need long since nmbers could be so large
 
 public class Ones {
 	
