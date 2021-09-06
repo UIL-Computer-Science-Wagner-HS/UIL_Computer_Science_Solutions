@@ -1,0 +1,5 @@
+To fill justify, an extra space is placed after words, beginning with the left most word, and continuing as long as necessary so the 40 characters are filled. The last line will be left justified without any extra spaces.
+
+
+
+
