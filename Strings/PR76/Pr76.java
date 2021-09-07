@@ -7,12 +7,11 @@ public class Pr76 {
 
 	static String fix(String first40, int spaceIndex){
 		
-		//System.out.println("First 40: "+ first40+" //with spaceIndex: "+spaceIndex);
+		
 		
 		while (first40.length()<40){
 			int space = first40.substring(spaceIndex).indexOf(" ")+spaceIndex;
 			first40=first40.substring(0,space)+" "+first40.substring(space);
-			//System.out.println(space+" space");
 			spaceIndex = space+2;
 			
 			
