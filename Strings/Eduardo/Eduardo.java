@@ -1,3 +1,4 @@
+// import a string.  shift letters by lenght of first word in string. 
 import java.io.*;
 import java.util.*;
 
