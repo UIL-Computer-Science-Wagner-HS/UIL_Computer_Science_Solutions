@@ -1,0 +1,16 @@
+3
+3
+A -> A B C
+B -> B
+C -> NONE
+4
+E -> E
+F -> F
+G -> G
+D -> NONE
+5
+Q -> B C V
+B -> B C V
+C -> B C
+D -> B C V
+V -> NONE
