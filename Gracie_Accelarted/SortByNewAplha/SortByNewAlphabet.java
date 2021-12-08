@@ -1,3 +1,7 @@
+// the goal here is to import a list of word and sort them based on a new alpha ordering. 
+//newAlpha is our new ordering. 
+//this uses a Comparator and it is recursive. 
+
 import java.io.*;
 import java.util.*;
 public class SortByNewAlphabet {
