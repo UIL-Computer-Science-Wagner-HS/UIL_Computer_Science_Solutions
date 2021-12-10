@@ -1,0 +1,13 @@
+true true or
+true false and
+true false true and or
+true false or not
+false not false not or
+true false xor
+false false and not false true or xor 
+true false xor true or 
+false true false xor or
+true true or true false or xor
+false true or false true or not and
+false false and false not or
+true true or true true or and true not true or xor
