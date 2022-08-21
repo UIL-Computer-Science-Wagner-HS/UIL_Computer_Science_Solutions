@@ -1,3 +1,15 @@
+/*5
+Alex,Brent,Chris,Dave,Eric,Fred
+Alex<->Chris,Alex<->Eric,Brent<->Dave,Brent<->Fred,Chris<->Eric,Dave<->Fred
+Alex,Brent,Chris,Dave,Eric,Fred
+Alex<->Chris,Alex<->Eric
+Alex,Brent,Chris,Dave,Eric,Fred
+Alex<->Brent,Brent<->Chris,Chris<->Dave,Dave<->Eric,Eric<->Fred,Fred<->Alex
+Alex,Brent,Chris,Dave,Eric,Fred
+Alex<->Brent,Alex<->Chris,Alex<->Dave,Alex<->Eric,Alex<->Fred
+Alex,Brent,Chris,Dave,Eric,Fred
+Alex<->Brent,Alex<->Chris,Alex<->Dave,Alex<->Eric,Alex<->Fred,Brent<->Chris
+*/
 import java.io.*;
 import java.util.*;
 
