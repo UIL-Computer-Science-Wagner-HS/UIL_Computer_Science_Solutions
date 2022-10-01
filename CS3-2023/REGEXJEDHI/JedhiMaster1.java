@@ -9,6 +9,7 @@ public class JedhiMaster1 {
 		// no vowels except the starting vowel
 		String str2 = str1.replaceAll("(\\S)[AEIOU]+", "$1");
 		System.out.println(str2);
+		// remove all repeated letters
 		str2 = str1.replaceAll("(\\w)\\1+", "$1");
 		System.out.println(str2);
 	}
