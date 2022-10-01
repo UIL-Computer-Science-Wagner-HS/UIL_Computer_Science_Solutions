@@ -1,0 +1,87 @@
+9. Noah
+Program Name: Noah.java Input File: noah.dat
+Noah is a columnist for his school’s newspaper and he’s writing an article on the most driven
+vehicles among the student body. He has already collected the data in regard to the make, model,
+and year of each student’s individual vehicle. The problem is his data is all over the place and
+needs to be organized so that he can analyze it. Can you write a program that will sort all the data
+alphabetically by make, model, then year as well as display the breakdown of each vehicle by
+make, model and year?
+Input: Input starts with a line containing an integer N (1<=N<=40), the number of students who
+drive a car at Noah’s school. The following N lines will contain the make, model, year for each
+vehicle Noah collected data for. The make, model, year will be separated by a comma.
+Output: The output for this program is broken into four portions:
+1) Data Sorted
+2) Make Breakdown
+3) Model Breakdown
+4) Year Breakdown
+The Data Sorted portion is displayed alphabetically by make, with the tiebreaker being model. If
+there is then a tie between both make and model, the final tiebreaker is year which is displayed
+from lowest to highest.
+For the make, model, and year breakdowns, the output is the number of occurrences of each. It is
+important to note that each breakdown is sorted. Make and model are sorted alphabetically, and
+year is sorted numerically from lowest to highest.
+Sample Input:
+16
+Chevy,Cruze,2019
+Chevy,Silverado,2006
+Ford,F150,2010
+Dodge,Durango,2020
+Dodge,Ram1500,2008
+Chevy,Silverado,2006
+Ford,F150,2015
+Chevy,Cruze,2009
+Ford,Explorer,2006
+Dodge,Ram1500,2018
+Dodge,Ram1500,2019
+Ford,F150,2015
+Ford,Mustang,2017
+Ford,Edge,2012
+Dodge,Charger,2017
+Dodge,Challenger,2012
+(sample output on next page)
+UIL – Computer Science Programming Packet – District 2020
+13
+Sample Output: (Noah)
+---Data Sorted---
+Chevy Cruze 2009
+Chevy Cruze 2019
+Chevy Silverado 2006
+Chevy Silverado 2006
+Dodge Challenger 2012
+Dodge Charger 2017
+Dodge Durango 2020
+Dodge Ram1500 2008
+Dodge Ram1500 2018
+Dodge Ram1500 2019
+Ford Edge 2012
+Ford Explorer 2006
+Ford F150 2010
+Ford F150 2015
+Ford F150 2015
+Ford Mustang 2017
+---Make Breakdown---
+Chevy: 4
+Dodge: 6
+Ford: 6
+---Model Breakdown---
+Challenger: 1
+Charger: 1
+Cruze: 2
+Durango: 1
+Edge: 1
+Explorer: 1
+F150: 3
+Mustang: 1
+Ram1500: 3
+Silverado: 2
+---Year Breakdown---
+2006: 3
+2008: 1
+2009: 1
+2010: 1
+2012: 2
+2015: 2
+2017: 2
+2018: 1
+2019: 2
+2020: 1
