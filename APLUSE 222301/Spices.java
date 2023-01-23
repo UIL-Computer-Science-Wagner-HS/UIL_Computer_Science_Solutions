@@ -1,38 +1,56 @@
 import java.io.*;
 import java.util.*;
+
+
+
 public class Spices {
-	String name;
-	int amt;
-	int rating;
-	String color;
+	static List<List<Integer>> list;
 	
-public Spices(String name, int amt, int rating, String color) {
-		super();
-		this.name = name;
-		this.amt = amt;
-		this.rating = rating;
-		this.color = color;
-	}
-
-public static void main(String... args) throws IOException {
-
-	Scanner scan = new Scanner(new File("spices1.dat"));
-	int noSets = scan.nextInt();
-	scan.nextLine();
-	StringBuilder colors = new StringBuilder("White, Red, Brown, Orange, Blue").reverse();
-	String cos = "BLue Orange Brown Red White";
-	List<Spices> list = new ArrayList<>();
-	while (noSets-- > 0) {
-		list.add(new Spices(scan.next(), scan.nextInt(), scan.nextInt(), scan.next()));
+	
+	static void occupy(int[] nums, int index, List<Integer> add) {
+		if(index == nums.length) {
+			list.add(new ArrayList<Integer>(add));
+			return;
+		}
 		
+		List<Integer> lnew = new ArrayList<>(add);
+		lnew.add(nums[index]);
+		occupy(nums, index+1, lnew);//use nums[index]
+		occupy(nums, index+1, new ArrayList<Integer>(add));//don;t use nums[index]
+	}
+	
+	
+	static boolean solve(int[] nums, int target) {
+		for(List<Integer> l: list) {
+			int sum = 0;
+			for(int s: l)
+				sum+=s;
+			if(sum==target)
+				return true;
+			
+			
+		}
+		
+		return false;
+		
+		
+	}
+	public static void main(String[] args) throws IOException {
+		Scanner scan = new Scanner(new File("spices.dat"));
+		int noSets = scan.nextInt();
+		scan.nextLine();
+		
+		while (noSets-- > 0) {
+			list = new ArrayList<>();
+			String[] arr = scan.nextLine().split("\\s+");
+			int nums[] = new int[arr.length];
+			for (int i = 0; i < nums.length; i++)
+				nums[i] = Integer.parseInt(arr[i]);
+			int target = Integer.parseInt(scan.nextLine());
+			occupy(nums,0, new ArrayList<Integer>());
+			System.out.println(list);
+			System.out.println(solve(nums, target)?"Blox be carzy":"Not on my Blox" );
+		}
 
 	}
-	Comparator<Spices> comp1 = (a,b)-> cos.indexOf(b.color) - cos.indexOf(a.color);
-	Comparator<Spices> comp2 = (a,b)-> b.amt - a.amt;
-	Comparator<Spices> comp3 = (a,b)-> a.name.compareTo(b.name);
-	Comparator<Spices> comp4 = (a,b)-> b.rating-a.rating;
-	list.sort(comp4.thenComparing(comp1).thenComparing(comp2).thenComparing(comp3));
-	list.forEach(a->System.out.println(a.name));
-
-}
 }
