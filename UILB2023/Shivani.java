@@ -17,7 +17,7 @@ public static void main(String... args) throws IOException {
 		sq = sq.multiply(three);
 		b1 = b1.multiply(two);
 		BigInteger sum = cube.add(sq);
-		sum = sum.add(sq);
+		sum = sum.add(b1);
 		sum = sum.divide(six);
 		System.out.println(sum);
 		
