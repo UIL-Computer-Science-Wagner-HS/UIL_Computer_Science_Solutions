@@ -9,13 +9,14 @@ public class BoxoOfCandy {
 		int row = 1;
 		while (test==null && row<box.length) {
 			test = box[row++][col];
+			if(test!=null){
+				box[0][col]= test;
+				box[row-1][col]= null;
+				return true;	
 			
 		}
-		if (test == null)
-			return false;
-		box[0][col]= test;
-		box[row-1][col]= null;
-		return true;
+		return false;
+		
 		
 	}
 	public Candy removeNextByFlavor(String flavor) {
