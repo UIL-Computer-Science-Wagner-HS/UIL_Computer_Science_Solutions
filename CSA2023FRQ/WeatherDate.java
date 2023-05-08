@@ -14,9 +14,9 @@ public class WeatherDate {
 	
 	public int longestHeatWave(double threshold) {
 		int longest = 1;
-		int count = 1;
-		for(int i = 1; i<temperatures.size(); i++) {
-			if(temperatures.get(i-1)==temperatures.get(i)) { 
+		int count = 0;
+		for(int i = 0; i<temperatures.size(); i++) {
+			if(temperatures.get(i)>=threshhold) { 
 				count++;
 			if(count>longest)
 				longest = count;
@@ -24,7 +24,7 @@ public class WeatherDate {
 		
 			else  count =1;
 			
-			return longest;
+			
 		}
 		
 		
