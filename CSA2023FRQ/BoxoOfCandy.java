@@ -1,5 +1,5 @@
 
-public class BoxoOfCandy {
+public class BoxOfCandy {
 	private Candy[][] box;
 	
 	public boolean moveCandyToFirstRow(int col) {
