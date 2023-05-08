@@ -10,6 +10,8 @@ public class Sign {
 	
 	public int numberOfLines() {
 		int len = message.length();
+		if(len<=width)
+			return 1;
 		if(len%width == 0)
 			return len/width;
 		return len/width+1;
