@@ -21,8 +21,8 @@ public class WeatherDate {
 			if(count>longest)
 				longest = count;
 			}
-		
-			else  count =1;
+			if(temperaturs.get(i)<threshhold)
+				count =0;
 			
 			
 		}
