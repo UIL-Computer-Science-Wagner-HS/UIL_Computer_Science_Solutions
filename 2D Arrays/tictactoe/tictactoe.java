@@ -20,7 +20,7 @@ public class tictactoe {
 			System.out.println("enter col");
 			int col = scan.nextInt();
 		    if(col>=3||row>=3||ttt[row][col].equals("o")||ttt[row][col].equals("x")) {
-		    	System.out.print("try again");
+		    	System.out.println("try again");
 		    	for(int i = 0; i<3;i++) {
 					for(int j = 0; j<3;j++) {
 						System.out.print(ttt[i][j]);
@@ -32,6 +32,9 @@ public class tictactoe {
 		    }
 		    ttt[row][col] = "o";
 		    counter++;
+		    if(counter >= 9) {
+		    	break;
+		    }
 		    int botrow = (int)(Math.random()*3);
 		    int botcol = (int)(Math.random()*3);
 		    while(ttt[botrow][botcol].equals("o")||ttt[botrow][botcol].equals("x")) {
@@ -51,10 +54,10 @@ public class tictactoe {
 		    	break;
 		    }
 		}
-		if(counter >= 9) {
-			System.out.print("tie");
-		}else {
+		if(!won(ttt).equals("go")) {
 			System.out.print(won(ttt));
+		}else {
+			System.out.print("tie");
 		}
 			
 		
@@ -99,7 +102,7 @@ public class tictactoe {
 			winrow = 1;
 			wincol = 1;
 		}
-		if(match[0][2].equals(match[1][1])&&match[1][1].equals(match[0][2])) {
+		if(match[0][2].equals(match[1][1])&&match[1][1].equals(match[2][0])) {
 			res = "won";
 			winrow = 1;
 			wincol = 1;
